@@ -51,7 +51,7 @@ class UpperLimbScreen extends StatelessWidget {
             crossAxisCount: 2,
             crossAxisSpacing: 16,
             mainAxisSpacing: 16,
-            childAspectRatio: 0.9,
+            childAspectRatio: 0.85,
           ),
           itemBuilder: (context, index) {
             final topic = topics[index];
@@ -67,13 +67,15 @@ class UpperLimbScreen extends StatelessWidget {
                   if (topic['title'] == 'Bones') {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => const BonesScreen()),
+                      MaterialPageRoute(
+                        builder: (context) => const BonesScreen(),
+                      ),
                     );
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(
-                          "${topic['title']} section is coming soon!",
+                          "${topic['title']} module is coming soon!",
                         ),
                       ),
                     );
@@ -84,11 +86,7 @@ class UpperLimbScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        topic['icon'],
-                        size: 45,
-                        color: Theme.of(context).colorScheme.primary,
-                      ),
+                      Icon(topic['icon'], size: 45, color: Colors.blue),
                       const SizedBox(height: 12),
                       Text(
                         topic['title'],

@@ -3,13 +3,20 @@ import 'package:flutter/material.dart';
 class BonesScreen extends StatelessWidget {
   const BonesScreen({super.key});
 
-  static const List<String> bones = [
+  final List<String> bones = const [
     "Clavicle",
     "Scapula",
     "Humerus",
     "Radius",
     "Ulna",
-    "Carpal Bones",
+    "Scaphoid",
+    "Lunate",
+    "Triquetrum",
+    "Pisiform",
+    "Trapezium",
+    "Trapezoid",
+    "Capitate",
+    "Hamate",
     "Metacarpals",
     "Phalanges",
   ];
@@ -19,21 +26,16 @@ class BonesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("Upper Limb Bones")),
       body: ListView.builder(
-        padding: const EdgeInsets.all(16),
         itemCount: bones.length,
         itemBuilder: (context, index) {
           return Card(
-            margin: const EdgeInsets.only(bottom: 12),
+            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             child: ListTile(
-              leading: const CircleAvatar(child: Icon(Icons.architecture)),
-              title: Text(
-                bones[index],
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
-              subtitle: const Text("Tap to study"),
+              leading: const Icon(Icons.architecture),
+              title: Text(bones[index]),
               trailing: const Icon(Icons.arrow_forward_ios),
               onTap: () {
-                // We'll add detailed pages later.
+                // Next step
               },
             ),
           );
