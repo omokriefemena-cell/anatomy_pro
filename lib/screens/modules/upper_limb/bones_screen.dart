@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'humerus_screen.dart';
 
 class BonesScreen extends StatelessWidget {
   const BonesScreen({super.key});
@@ -28,14 +29,27 @@ class BonesScreen extends StatelessWidget {
       body: ListView.builder(
         itemCount: bones.length,
         itemBuilder: (context, index) {
+          final bone = bones[index];
+
           return Card(
             margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             child: ListTile(
-              leading: const Icon(Icons.architecture),
-              title: Text(bones[index]),
+              leading: const Icon(Icons.architecture, color: Colors.blue),
+              title: Text(bone),
               trailing: const Icon(Icons.arrow_forward_ios),
               onTap: () {
-                // Next step
+                if (bone == "Humerus") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HumerusScreen(),
+                    ),
+                  );
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text("$bone lesson is coming soon!")),
+                  );
+                }
               },
             ),
           );
