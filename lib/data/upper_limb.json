@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Humerus",
+    "type": "Long Bone",
+    "region": "Upper Limb",
+    "overview": "The humerus is the longest and largest bone of the upper limb. It articulates proximally with the scapula and distally with the radius and ulna."
+  },
+  {
+    "name": "Radius",
+    "type": "Long Bone",
+    "region": "Upper Limb",
+    "overview": "The radius is the lateral bone of the forearm and is important in pronation and supination."
+  },
+  {
+    "name": "Ulna",
+    "type": "Long Bone",
+    "region": "Upper Limb",
+    "overview": "The ulna is the medial bone of the forearm and forms the main hinge joint of the elbow."
+  }
+]
