@@ -1,34 +1,169 @@
 [
-  {"name":"Clavicle","type":"Long Bone","region":"Pectoral Girdle"},
-  {"name":"Scapula","type":"Flat Bone","region":"Pectoral Girdle"},
-  {"name":"Humerus","type":"Long Bone","region":"Arm"},
-  {"name":"Radius","type":"Long Bone","region":"Forearm"},
-  {"name":"Ulna","type":"Long Bone","region":"Forearm"},
-  {"name":"Scaphoid","type":"Carpal Bone","region":"Hand"},
-  {"name":"Lunate","type":"Carpal Bone","region":"Hand"},
-  {"name":"Triquetrum","type":"Carpal Bone","region":"Hand"},
-  {"name":"Pisiform","type":"Carpal Bone","region":"Hand"},
-  {"name":"Trapezium","type":"Carpal Bone","region":"Hand"},
-  {"name":"Trapezoid","type":"Carpal Bone","region":"Hand"},
-  {"name":"Capitate","type":"Carpal Bone","region":"Hand"},
-  {"name":"Hamate","type":"Carpal Bone","region":"Hand"},
-  {"name":"Metacarpal I","type":"Long Bone","region":"Hand"},
-  {"name":"Metacarpal II","type":"Long Bone","region":"Hand"},
-  {"name":"Metacarpal III","type":"Long Bone","region":"Hand"},
-  {"name":"Metacarpal IV","type":"Long Bone","region":"Hand"},
-  {"name":"Metacarpal V","type":"Long Bone","region":"Hand"},
-  {"name":"Proximal Phalanx I","type":"Phalanx","region":"Hand"},
-  {"name":"Distal Phalanx I","type":"Phalanx","region":"Hand"},
-  {"name":"Proximal Phalanx II","type":"Phalanx","region":"Hand"},
-  {"name":"Middle Phalanx II","type":"Phalanx","region":"Hand"},
-  {"name":"Distal Phalanx II","type":"Phalanx","region":"Hand"},
-  {"name":"Proximal Phalanx III","type":"Phalanx","region":"Hand"},
-  {"name":"Middle Phalanx III","type":"Phalanx","region":"Hand"},
-  {"name":"Distal Phalanx III","type":"Phalanx","region":"Hand"},
-  {"name":"Proximal Phalanx IV","type":"Phalanx","region":"Hand"},
-  {"name":"Middle Phalanx IV","type":"Phalanx","region":"Hand"},
-  {"name":"Distal Phalanx IV","type":"Phalanx","region":"Hand"},
-  {"name":"Proximal Phalanx V","type":"Phalanx","region":"Hand"},
-  {"name":"Middle Phalanx V","type":"Phalanx","region":"Hand"},
-  {"name":"Distal Phalanx V","type":"Phalanx","region":"Hand"}
+  {
+    "name": "Clavicle",
+    "type": "Long Bone",
+    "region": "Pectoral Girdle"
+  },
+  {
+    "name": "Scapula",
+    "type": "Flat Bone",
+    "region": "Pectoral Girdle"
+  },
+  {
+    "name": "Humerus",
+    "type": "Long Bone",
+    "region": "Arm",
+    "overview": "The humerus is the long bone of the arm. It extends from the shoulder to the elbow and forms the skeleton of the arm.",
+    "features": "Head, anatomical neck, surgical neck, greater tubercle, lesser tubercle, intertubercular sulcus, deltoid tuberosity, radial groove, capitulum, trochlea, medial and lateral epicondyles.",
+    "attachments": "Deltoid, pectoralis major, latissimus dorsi, teres major, supraspinatus, infraspinatus, subscapularis, brachialis, coracobrachialis, triceps brachii and others.",
+    "bloodSupply": "Primarily supplied by the nutrient artery and branches of the anterior and posterior circumflex humeral arteries.",
+    "nerveSupply": "The bone itself receives innervation from the periosteal nerves. Clinically related nerves include the axillary, radial, median and ulnar nerves.",
+    "ossification": "Primary ossification begins during fetal life. Secondary ossification centers appear in the head, greater tubercle, lesser tubercle and distal end before eventually fusing.",
+    "clinical": "Common injuries include fractures of the surgical neck, shaft fractures involving the radial nerve, and supracondylar fractures."
+  },
+  {
+    "name": "Radius",
+    "type": "Long Bone",
+    "region": "Forearm"
+  },
+  {
+    "name": "Ulna",
+    "type": "Long Bone",
+    "region": "Forearm"
+  },
+  {
+    "name": "Scaphoid",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Lunate",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Triquetrum",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Pisiform",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Trapezium",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Trapezoid",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Capitate",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Hamate",
+    "type": "Carpal Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Metacarpal I",
+    "type": "Long Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Metacarpal II",
+    "type": "Long Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Metacarpal III",
+    "type": "Long Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Metacarpal IV",
+    "type": "Long Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Metacarpal V",
+    "type": "Long Bone",
+    "region": "Hand"
+  },
+  {
+    "name": "Proximal Phalanx I",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Distal Phalanx I",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Proximal Phalanx II",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Middle Phalanx II",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Distal Phalanx II",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Proximal Phalanx III",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Middle Phalanx III",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Distal Phalanx III",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Proximal Phalanx IV",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Middle Phalanx IV",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Distal Phalanx IV",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Proximal Phalanx V",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Middle Phalanx V",
+    "type": "Phalanx",
+    "region": "Hand"
+  },
+  {
+    "name": "Distal Phalanx V",
+    "type": "Phalanx",
+    "region": "Hand"
+  }
 ]

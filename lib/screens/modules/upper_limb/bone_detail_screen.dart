@@ -1,32 +1,12 @@
 import 'package:flutter/material.dart';
+
 import '../../../models/anatomy_item.dart';
+import '../../../widgets/section_card.dart';
 
 class BoneDetailScreen extends StatelessWidget {
   final AnatomyItem bone;
 
   const BoneDetailScreen({super.key, required this.bone});
-
-  Widget buildSection(String title, String content) {
-    if (content.isEmpty) return const SizedBox();
-
-    return Card(
-      margin: const EdgeInsets.only(bottom: 15),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              title,
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-            Text(content),
-          ],
-        ),
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,29 +16,47 @@ class BoneDetailScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            Icon(Icons.architecture, size: 90, color: Colors.blue),
-
-            const SizedBox(height: 20),
-
-            Text(
-              bone.name,
-              style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            SectionCard(
+              title: "Overview",
+              content: bone.overview,
+              icon: Icons.menu_book,
             ),
 
-            Text(
-              bone.type,
-              style: const TextStyle(color: Colors.grey, fontSize: 18),
+            SectionCard(
+              title: "Features",
+              content: bone.features,
+              icon: Icons.architecture,
             ),
 
-            const SizedBox(height: 25),
+            SectionCard(
+              title: "Attachments",
+              content: bone.attachments,
+              icon: Icons.fitness_center,
+            ),
 
-            buildSection("Overview", bone.overview),
-            buildSection("Features", bone.features),
-            buildSection("Attachments", bone.attachments),
-            buildSection("Blood Supply", bone.bloodSupply),
-            buildSection("Nerve Supply", bone.nerveSupply),
-            buildSection("Ossification", bone.ossification),
-            buildSection("Clinical Anatomy", bone.clinical),
+            SectionCard(
+              title: "Blood Supply",
+              content: bone.bloodSupply,
+              icon: Icons.favorite,
+            ),
+
+            SectionCard(
+              title: "Nerve Supply",
+              content: bone.nerveSupply,
+              icon: Icons.bolt,
+            ),
+
+            SectionCard(
+              title: "Ossification",
+              content: bone.ossification,
+              icon: Icons.science,
+            ),
+
+            SectionCard(
+              title: "Clinical Anatomy",
+              content: bone.clinical,
+              icon: Icons.local_hospital,
+            ),
           ],
         ),
       ),
