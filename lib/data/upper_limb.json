@@ -1,20 +1,34 @@
 [
-  {
-    "name": "Humerus",
-    "type": "Long Bone",
-    "region": "Upper Limb",
-    "overview": "The humerus is the longest and largest bone of the upper limb. It articulates proximally with the scapula and distally with the radius and ulna."
-  },
-  {
-    "name": "Radius",
-    "type": "Long Bone",
-    "region": "Upper Limb",
-    "overview": "The radius is the lateral bone of the forearm and is important in pronation and supination."
-  },
-  {
-    "name": "Ulna",
-    "type": "Long Bone",
-    "region": "Upper Limb",
-    "overview": "The ulna is the medial bone of the forearm and forms the main hinge joint of the elbow."
-  }
+  {"name":"Clavicle","type":"Long Bone","region":"Pectoral Girdle"},
+  {"name":"Scapula","type":"Flat Bone","region":"Pectoral Girdle"},
+  {"name":"Humerus","type":"Long Bone","region":"Arm"},
+  {"name":"Radius","type":"Long Bone","region":"Forearm"},
+  {"name":"Ulna","type":"Long Bone","region":"Forearm"},
+  {"name":"Scaphoid","type":"Carpal Bone","region":"Hand"},
+  {"name":"Lunate","type":"Carpal Bone","region":"Hand"},
+  {"name":"Triquetrum","type":"Carpal Bone","region":"Hand"},
+  {"name":"Pisiform","type":"Carpal Bone","region":"Hand"},
+  {"name":"Trapezium","type":"Carpal Bone","region":"Hand"},
+  {"name":"Trapezoid","type":"Carpal Bone","region":"Hand"},
+  {"name":"Capitate","type":"Carpal Bone","region":"Hand"},
+  {"name":"Hamate","type":"Carpal Bone","region":"Hand"},
+  {"name":"Metacarpal I","type":"Long Bone","region":"Hand"},
+  {"name":"Metacarpal II","type":"Long Bone","region":"Hand"},
+  {"name":"Metacarpal III","type":"Long Bone","region":"Hand"},
+  {"name":"Metacarpal IV","type":"Long Bone","region":"Hand"},
+  {"name":"Metacarpal V","type":"Long Bone","region":"Hand"},
+  {"name":"Proximal Phalanx I","type":"Phalanx","region":"Hand"},
+  {"name":"Distal Phalanx I","type":"Phalanx","region":"Hand"},
+  {"name":"Proximal Phalanx II","type":"Phalanx","region":"Hand"},
+  {"name":"Middle Phalanx II","type":"Phalanx","region":"Hand"},
+  {"name":"Distal Phalanx II","type":"Phalanx","region":"Hand"},
+  {"name":"Proximal Phalanx III","type":"Phalanx","region":"Hand"},
+  {"name":"Middle Phalanx III","type":"Phalanx","region":"Hand"},
+  {"name":"Distal Phalanx III","type":"Phalanx","region":"Hand"},
+  {"name":"Proximal Phalanx IV","type":"Phalanx","region":"Hand"},
+  {"name":"Middle Phalanx IV","type":"Phalanx","region":"Hand"},
+  {"name":"Distal Phalanx IV","type":"Phalanx","region":"Hand"},
+  {"name":"Proximal Phalanx V","type":"Phalanx","region":"Hand"},
+  {"name":"Middle Phalanx V","type":"Phalanx","region":"Hand"},
+  {"name":"Distal Phalanx V","type":"Phalanx","region":"Hand"}
 ]

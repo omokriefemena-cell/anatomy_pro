@@ -1,57 +1,71 @@
 import 'package:flutter/material.dart';
-import 'humerus_screen.dart';
 
-class BonesScreen extends StatelessWidget {
+import '../../../models/anatomy_item.dart';
+import '../../../services/anatomy_service.dart';
+import 'bone_detail_screen.dart';
+
+class BonesScreen extends StatefulWidget {
   const BonesScreen({super.key});
 
-  final List<String> bones = const [
-    "Clavicle",
-    "Scapula",
-    "Humerus",
-    "Radius",
-    "Ulna",
-    "Scaphoid",
-    "Lunate",
-    "Triquetrum",
-    "Pisiform",
-    "Trapezium",
-    "Trapezoid",
-    "Capitate",
-    "Hamate",
-    "Metacarpals",
-    "Phalanges",
-  ];
+  @override
+  State<BonesScreen> createState() => _BonesScreenState();
+}
+
+class _BonesScreenState extends State<BonesScreen> {
+  final AnatomyService anatomyService = AnatomyService();
+
+  late Future<List<AnatomyItem>> bonesFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    bonesFuture = anatomyService.loadUpperLimbBones();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Upper Limb Bones")),
-      body: ListView.builder(
-        itemCount: bones.length,
-        itemBuilder: (context, index) {
-          final bone = bones[index];
+      body: FutureBuilder<List<AnatomyItem>>(
+        future: bonesFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
 
-          return Card(
-            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            child: ListTile(
-              leading: const Icon(Icons.architecture, color: Colors.blue),
-              title: Text(bone),
-              trailing: const Icon(Icons.arrow_forward_ios),
-              onTap: () {
-                if (bone == "Humerus") {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const HumerusScreen(),
-                    ),
-                  );
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("$bone lesson is coming soon!")),
-                  );
-                }
-              },
-            ),
+          if (snapshot.hasError) {
+            return Center(child: Text("Error: ${snapshot.error}"));
+          }
+
+          if (!snapshot.hasData || snapshot.data!.isEmpty) {
+            return const Center(child: Text("No bones found."));
+          }
+
+          final bones = snapshot.data!;
+
+          return ListView.builder(
+            itemCount: bones.length,
+            itemBuilder: (context, index) {
+              final bone = bones[index];
+
+              return Card(
+                margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                child: ListTile(
+                  leading: const Icon(Icons.architecture, color: Colors.blue),
+                  title: Text(bone.name),
+                  subtitle: Text(bone.type),
+                  trailing: const Icon(Icons.arrow_forward_ios),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => BoneDetailScreen(bone: bone),
+                      ),
+                    );
+                  },
+                ),
+              );
+            },
           );
         },
       ),
