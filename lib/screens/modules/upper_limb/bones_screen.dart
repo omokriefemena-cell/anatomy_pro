@@ -25,7 +25,7 @@ class _BonesScreenState extends State<BonesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Upper Limb Bones")),
+      appBar: AppBar(title: const Text("Upper Limb Bones"), centerTitle: true),
       body: FutureBuilder<List<AnatomyItem>>(
         future: bonesFuture,
         builder: (context, snapshot) {
@@ -38,7 +38,7 @@ class _BonesScreenState extends State<BonesScreen> {
           }
 
           if (!snapshot.hasData || snapshot.data!.isEmpty) {
-            return const Center(child: Text("No bones found."));
+            return const Center(child: Text("No bones found"));
           }
 
           final bones = snapshot.data!;

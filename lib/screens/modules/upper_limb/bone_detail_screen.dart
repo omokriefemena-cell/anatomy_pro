@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/anatomy_item.dart';
-import '../../../widgets/anatomy_section.dart';
+import '../../../widgets/anatomy_header_card.dart';
+import '../../../widgets/info_card.dart';
+import '../../../widgets/quick_fact_card.dart';
 
 class BoneDetailScreen extends StatelessWidget {
   final AnatomyItem bone;
@@ -17,50 +19,80 @@ class BoneDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Card(
-              elevation: 3,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  gradient: LinearGradient(
-                    colors: [Colors.blue.shade700, Colors.blue.shade400],
-                  ),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      bone.name,
-                      style: const TextStyle(
-                        fontSize: 22,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      "${bone.type} • ${bone.region}",
-                      style: const TextStyle(color: Colors.white70),
-                    ),
-                  ],
-                ),
-              ),
+            /// Header Image
+            AnatomyHeaderCard(
+              imagePath: bone.image,
+              title: bone.name,
+              subtitle: "${bone.type} • ${bone.region}",
             ),
 
             const SizedBox(height: 20),
 
-            AnatomySection(title: "Overview", content: bone.overview),
-            AnatomySection(title: "Features", content: bone.features),
-            AnatomySection(title: "Attachments", content: bone.attachments),
-            AnatomySection(title: "Blood Supply", content: bone.bloodSupply),
-            AnatomySection(title: "Nerve Supply", content: bone.nerveSupply),
-            AnatomySection(title: "Ossification", content: bone.ossification),
-            AnatomySection(
-              title: "Clinical Importance",
+            /// Quick Facts
+            Row(
+              children: [
+                Expanded(
+                  child: QuickFactCard(
+                    icon: Icons.category,
+                    title: "Bone Type",
+                    value: bone.type,
+                  ),
+                ),
+
+                const SizedBox(width: 12),
+
+                Expanded(
+                  child: QuickFactCard(
+                    icon: Icons.place,
+                    title: "Region",
+                    value: bone.region,
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 20),
+
+            /// Detail Cards
+            InfoCard(
+              icon: Icons.menu_book,
+              title: "Overview",
+              content: bone.overview,
+            ),
+
+            InfoCard(
+              icon: Icons.architecture,
+              title: "Features",
+              content: bone.features,
+            ),
+
+            InfoCard(
+              icon: Icons.fitness_center,
+              title: "Attachments",
+              content: bone.attachments,
+            ),
+
+            InfoCard(
+              icon: Icons.bloodtype,
+              title: "Blood Supply",
+              content: bone.bloodSupply,
+            ),
+
+            InfoCard(
+              icon: Icons.bolt,
+              title: "Nerve Supply",
+              content: bone.nerveSupply,
+            ),
+
+            InfoCard(
+              icon: Icons.science,
+              title: "Ossification",
+              content: bone.ossification,
+            ),
+
+            InfoCard(
+              icon: Icons.local_hospital,
+              title: "Clinical Anatomy",
               content: bone.clinical,
             ),
           ],

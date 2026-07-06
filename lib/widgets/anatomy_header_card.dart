@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AnatomyHeaderCard extends StatelessWidget {
   final String imagePath;
   final String title;
-  final String subtitle;
+  final String? subtitle;
 
   const AnatomyHeaderCard({
     super.key,
@@ -59,10 +59,14 @@ class AnatomyHeaderCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                    subtitle,
-                    style: const TextStyle(color: Colors.white70, fontSize: 16),
-                  ),
+                  if (subtitle != null && subtitle!.isNotEmpty)
+                    Text(
+                      subtitle!,
+                      style: const TextStyle(
+                        color: Colors.white70,
+                        fontSize: 16,
+                      ),
+                    ),
                 ],
               ),
             ),
