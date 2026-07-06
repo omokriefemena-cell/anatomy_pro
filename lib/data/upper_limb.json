@@ -2,168 +2,424 @@
   {
     "name": "Clavicle",
     "type": "Long Bone",
-    "region": "Pectoral Girdle"
+    "region": "Shoulder Girdle",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Scapula",
     "type": "Flat Bone",
-    "region": "Pectoral Girdle"
+    "region": "Shoulder Girdle",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Humerus",
     "type": "Long Bone",
     "region": "Arm",
-    "overview": "The humerus is the long bone of the arm. It extends from the shoulder to the elbow and forms the skeleton of the arm.",
-    "features": "Head, anatomical neck, surgical neck, greater tubercle, lesser tubercle, intertubercular sulcus, deltoid tuberosity, radial groove, capitulum, trochlea, medial and lateral epicondyles.",
-    "attachments": "Deltoid, pectoralis major, latissimus dorsi, teres major, supraspinatus, infraspinatus, subscapularis, brachialis, coracobrachialis, triceps brachii and others.",
-    "bloodSupply": "Primarily supplied by the nutrient artery and branches of the anterior and posterior circumflex humeral arteries.",
-    "nerveSupply": "The bone itself receives innervation from the periosteal nerves. Clinically related nerves include the axillary, radial, median and ulnar nerves.",
-    "ossification": "Primary ossification begins during fetal life. Secondary ossification centers appear in the head, greater tubercle, lesser tubercle and distal end before eventually fusing.",
-    "clinical": "Common injuries include fractures of the surgical neck, shaft fractures involving the radial nerve, and supracondylar fractures."
+    "image": "",
+    "overview": "The humerus is the longest and largest bone of the upper limb. It articulates proximally with the glenoid cavity of the scapula at the shoulder joint and distally with the radius and ulna at the elbow joint.",
+    "features": "Proximal end: head, anatomical neck, greater and lesser tubercles, intertubercular sulcus. Shaft: deltoid tuberosity, radial groove. Distal end: medial and lateral epicondyles, capitulum, trochlea, olecranon fossa.",
+    "attachments": "Rotator cuff muscles (supraspinatus, infraspinatus, teres minor and subscapularis) attach to the tubercles. Pectoralis major, latissimus dorsi and teres major attach to the intertubercular groove. Deltoid inserts on the deltoid tuberosity.",
+    "bloodSupply": "Anterior and posterior circumflex humeral arteries, nutrient artery of the humerus and branches of the brachial artery.",
+    "nerveSupply": "Closely related to the axillary nerve at the surgical neck and the radial nerve in the radial groove. Median and ulnar nerves are related to the distal humerus.",
+    "ossification": "Primary ossification begins in the shaft during fetal life. Secondary ossification centers develop in the head, greater tubercle, lesser tubercle and distal end before fusing.",
+    "clinical": "Fracture of the surgical neck may injure the axillary nerve. Mid-shaft fractures may damage the radial nerve causing wrist drop. Supracondylar fractures are common in children."
   },
   {
     "name": "Radius",
     "type": "Long Bone",
-    "region": "Forearm"
+    "region": "Forearm",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Ulna",
     "type": "Long Bone",
-    "region": "Forearm"
-  },
+    "region": "Forearm",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
+  }
+,
   {
     "name": "Scaphoid",
     "type": "Carpal Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Lunate",
     "type": "Carpal Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Triquetrum",
     "type": "Carpal Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Pisiform",
     "type": "Carpal Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Trapezium",
     "type": "Carpal Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Trapezoid",
     "type": "Carpal Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Capitate",
     "type": "Carpal Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
     "name": "Hamate",
     "type": "Carpal Bone",
-    "region": "Hand"
-  },
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
+  }
+,
   {
-    "name": "Metacarpal I",
+    "name": "First Metacarpal",
     "type": "Long Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Metacarpal II",
+    "name": "Second Metacarpal",
     "type": "Long Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Metacarpal III",
+    "name": "Third Metacarpal",
     "type": "Long Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Metacarpal IV",
+    "name": "Fourth Metacarpal",
     "type": "Long Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Metacarpal V",
+    "name": "Fifth Metacarpal",
     "type": "Long Bone",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
+  },
+
+  {
+    "name": "Proximal Phalanx of Thumb",
+    "type": "Phalanx",
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Proximal Phalanx I",
+    "name": "Distal Phalanx of Thumb",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
+  },
+
+  {
+    "name": "Proximal Phalanx of Index Finger",
+    "type": "Phalanx",
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Distal Phalanx I",
+    "name": "Middle Phalanx of Index Finger",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Proximal Phalanx II",
+    "name": "Distal Phalanx of Index Finger",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
+  },
+
+  {
+    "name": "Proximal Phalanx of Middle Finger",
+    "type": "Phalanx",
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Middle Phalanx II",
+    "name": "Middle Phalanx of Middle Finger",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Distal Phalanx II",
+    "name": "Distal Phalanx of Middle Finger",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
+  },
+
+  {
+    "name": "Proximal Phalanx of Ring Finger",
+    "type": "Phalanx",
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Proximal Phalanx III",
+    "name": "Middle Phalanx of Ring Finger",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Middle Phalanx III",
+    "name": "Distal Phalanx of Ring Finger",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
+  },
+
+  {
+    "name": "Proximal Phalanx of Little Finger",
+    "type": "Phalanx",
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Distal Phalanx III",
+    "name": "Middle Phalanx of Little Finger",
     "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   },
   {
-    "name": "Proximal Phalanx IV",
+    "name": "Distal Phalanx of Little Finger",
     "type": "Phalanx",
-    "region": "Hand"
-  },
-  {
-    "name": "Middle Phalanx IV",
-    "type": "Phalanx",
-    "region": "Hand"
-  },
-  {
-    "name": "Distal Phalanx IV",
-    "type": "Phalanx",
-    "region": "Hand"
-  },
-  {
-    "name": "Proximal Phalanx V",
-    "type": "Phalanx",
-    "region": "Hand"
-  },
-  {
-    "name": "Middle Phalanx V",
-    "type": "Phalanx",
-    "region": "Hand"
-  },
-  {
-    "name": "Distal Phalanx V",
-    "type": "Phalanx",
-    "region": "Hand"
+    "region": "Hand",
+    "image": "",
+    "overview": "",
+    "features": "",
+    "attachments": "",
+    "bloodSupply": "",
+    "nerveSupply": "",
+    "ossification": "",
+    "clinical": ""
   }
 ]

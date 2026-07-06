@@ -2,6 +2,7 @@ class AnatomyItem {
   final String name;
   final String type;
   final String region;
+  final String image;
   final String overview;
   final String features;
   final String attachments;
@@ -14,6 +15,7 @@ class AnatomyItem {
     required this.name,
     required this.type,
     required this.region,
+    required this.image,
     required this.overview,
     required this.features,
     required this.attachments,
@@ -28,6 +30,7 @@ class AnatomyItem {
       name: json["name"] ?? "",
       type: json["type"] ?? "",
       region: json["region"] ?? "",
+      image: json["image"] ?? "",
       overview: json["overview"] ?? "",
       features: json["features"] ?? "",
       attachments: json["attachments"] ?? "",
